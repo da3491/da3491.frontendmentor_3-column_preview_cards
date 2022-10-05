@@ -1,0 +1,115 @@
+:root {
+  /* - Mobile: 375px */
+  /* - Desktop: 1440px */
+  /* - Font size: 15px */
+  /* font-one Weights: 400 */
+  /* font-two Weights: 700 */
+
+  --orange: hsl(31, 77%, 52%);
+  --green: hsl(184, 100%, 22%);
+  --dark-green: hsl(179, 100%, 13%);
+  /* paragraphs */
+  --light-grey: hsla(0, 0%, 100%, 0.75);
+  /* background, headings, buttons */
+  --white: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca";
+  color: white;
+  overflow: scroll;
+}
+
+img {
+  scale: 0.75;
+  margin-left: -15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#sedan {
+  background-color: var(--orange);
+}
+
+#suv {
+  background-color: var(--green);
+}
+
+#luxury {
+  background-color: var(--dark-green);
+}
+
+.card {
+  padding: 2rem;
+  max-width: 275px;
+}
+
+.title {
+  font-family: "Big Shoulders Display";
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.info {
+  font-size: 0.75rem;
+  line-height: 20px;
+  margin-right: 3rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+button:hover,
+button:active {
+  background-color: inherit;
+  border: 2px solid white;
+  color: white;
+  max-height: 49.33px;
+}
+
+.orange-text {
+  color: var(--orange);
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.dark-green-text {
+  color: var(--dark-green);
+}
+
+@media (min-width: 376px) {
+  .container {
+    flex-direction: row;
+  }
+
+  button {
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+}
